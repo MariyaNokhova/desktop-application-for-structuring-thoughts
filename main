@@ -1,1 +1,40 @@
+from PyQt5.QtCore import Qt
+from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QLabel, QVBoxLayout
+import sys
 
+app = QApplication([])
+main_window = QWidget()
+main_window.setWindowTitle('it will be done later')
+main_window.move(1000, 1000)
+main_window.resize(1000, 1000)
+
+class Labels():
+    def __init__(self, text0, size0, color0)
+        self.text = QLabel(text0, allignment=Qt.AlignCenter)
+        self.size = size0
+        self.color = color0
+    def change_size(self):
+        self.text.setText(self.size)
+    def change_color():
+        pass
+class Button():
+    def __init__(self, text_button):
+        self.button = QVBoxLayout(self)
+    def create_button():
+        self.button = QPushButton(text_button)
+        self.button.setText(text_button)
+
+button = Button()
+button.create_button()
+label = Labels(input(), int(input('введите размер шрифта(1-100):')), (255, 255, 255))
+
+run = True
+while run:
+    if button.clicked.connect(button.show()):
+    line.addWidget(label)
+    line.addWidget()
+    run = False
+# to-do: condition + main_window.hide()
+main_window.show()
+sys.exit(app.exec())
+app.exec_()
